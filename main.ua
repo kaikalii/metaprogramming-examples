@@ -1,6 +1,5 @@
 MakeVec! ←^ (
-  °⊂ ⊜□⊸≠@ °$"\"_\"" °□₁
-  ⊃(∘|⋅($"{_}"/◇⊂₃@ )|∘|⋅⧻|⋅⧻)
+  ⊃(∘|⋅($"{_}"/◇⊂₃@ )|∘|⋅⧻|⋅⧻)°⊂
   $$ ┌─╴_
   $$   ~ _
   $$   Add ← +
@@ -14,10 +13,11 @@ MakeVec! ←^ (
   $$   Normalize ← ⨬Div0⊸=0⊸Length
   $$ └─╴
 )
-MakeVec!"Size Width Height"
-MakeVec!"Vec₂ X Y"
-MakeVec!"Vec₃ X Y Z"
-MakeVec!"Vec₄ X Y Z W"
+
+MakeVec!(Size|Width|Height)
+MakeVec!(Vec₂|X|Y)
+MakeVec!(Vec₃|X|Y|Z)
+MakeVec!(Vec₄|X|Y|Z|W)
 
 Size 1920 1080
 Vec₂!(Length New 3 4)
